@@ -15,7 +15,18 @@
   height: 50px;
   margin-right: 15px;
   font-weight: bold;
-  background-color: rgb(47, 255, 116);
+  background-color: rgb(177, 220, 177);
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+.period_button:hover {
+  padding: 0px 20px;
+  height: 50px;
+  margin-right: 15px;
+  font-weight: bold;
+  background-color: rgb(156, 194, 156);
   border: none;
   cursor: pointer;
   border-radius: 10px;
@@ -55,6 +66,13 @@
 .orderlist_btn_group {
   vertical-align: middle;
   display: inline-block;
+}
+
+.orderlist_detail {
+  width: 350px;
+  white-space: nowrap; /* 자동 줄바꿈을 방지 */
+  overflow: hidden; /* 반드시 "visible" 이외의 값이 지정되어 있어야 한다. */
+  text-overflow: ellipsis; /* ellipsis or clip */
 }
 .orderlist_btn_group {
   margin-top: 20px;

@@ -9,18 +9,22 @@
   width: 530px;
   /* border: 5px solid greenyellow; */
   /* border-radius: 10px; */
-  padding: 10px;
+  padding: 30px;
   margin: 10px;
-  background-color: rgb(191, 248, 205);
+  /* background-color: rgb(177, 220, 177); */
+  background-color: rgb(233, 233, 233);
+  border-radius: 10px;
 }
 .order_detail_box_2 {
   display: inline;
   width: 430px;
-  background-color: rgb(191, 248, 205);
+  background-color: rgb(233, 233, 233);
+
   /* border: 5px solid greenyellow; */
   /* border-radius: 10px; */
-  padding: 10px;
+  padding: 30px;
   margin: 10px;
+  border-radius: 10px;
 }
 
 .order_complete_delivery_destination {
@@ -42,11 +46,13 @@
 .complete_order_btnOrder {
   width: 180px;
   height: 50px;
-  margin-left: 10px;
-  font-weight: bold;
-  background-color: rgb(135, 255, 141);
-  /* border: 1px solid black; */
+  margin-left: 20px;
+  /* font-weight: bold; */
+  font-size: larger;
+  background-color: rgb(177, 220, 177);
+  border: 1px solid rgb(156, 156, 156);
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .complete_order_chart_component {

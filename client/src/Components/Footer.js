@@ -29,7 +29,7 @@ function Footer() {
             <nav className="footer_nav">
               <ul>
                 <li className="footer_nav_item">상호명: EZEN 빵끗 쇼핑몰</li>
-                <li className="footer_nav_item">대표자명: 전윤호</li>
+                <li className="footer_nav_item">대표자명: 전윤호, 이기현</li>
                 <li className="footer_nav_item">
                   주소: 인천광역시 남동구 인주대로 593 엔타스 12층
                 </li>

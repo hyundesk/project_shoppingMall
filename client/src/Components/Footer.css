@@ -56,7 +56,11 @@
 }
 
 .family_site_nav_item a {
-  color: rgb(145, 255, 163);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.family_site_nav_item a:hover {
+  color: rgb(154, 209, 103);
   text-decoration: none;
 }
 

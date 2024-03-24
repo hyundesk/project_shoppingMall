@@ -42,15 +42,15 @@ const Questionmodal = ({products}) => {
 
     async function handleSubmit () {
         const pushData = [products[0].id, userid, content.replace(/\n/g, '<br>')]
-        console.log(pushData)
+        // console.log(pushData)
         await axios.post(`${Server_URL}/question`, pushData)
         .then((result) => {
-            console.log('요청성공')
-            console.log(result)
+            // console.log('요청성공')
+            // console.log(result)
         })
         .catch((error) => {
-            console.log('error')
-            console.log(error)
+            // console.log('error')
+            // console.log(error)
         })
         setIsOpen(false);
         window.location.reload();

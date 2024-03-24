@@ -27,14 +27,14 @@ const Readerboard = () => {
         input.click();
 
         input.addEventListener('change', async () => {
-            console.log('체인지')
+            // console.log('체인지')
             const file = input.files[0];
             const formData = new FormData();
             
             formData.append('img', file);
             try {
                 const result = await axios.post(`${Server_URL}/img`, formData);
-                console.log(result.data.url)
+                // console.log(result.data.url)
                 const IMG_URL = result.data.url
                 const editor = quillRef.current.getEditor();
 
@@ -42,7 +42,7 @@ const Readerboard = () => {
                 editor.insertEmbed(range.index, 'image', IMG_URL);
             }
             catch (error) {
-                console.log('err');
+                // console.log('err');
               }
         })
 
@@ -131,12 +131,12 @@ const Readerboard = () => {
             }
             })
             .then((result) => {
-                console.log('요청성공')
-                console.log(result)
+                // console.log('요청성공')
+                // console.log(result)
             })
             .catch((err) => {
-                console.log('err')
-                console.log(err)
+                // console.log('err')
+                // console.log(err)
             })
 
         }

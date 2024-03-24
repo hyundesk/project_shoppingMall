@@ -61,15 +61,15 @@ const Answer = () => {
 
     async function handleSubmit () {
         const pushData = [question[0].questionid, answer.replace(/\n/g, '<br>'), product[0].prodid]
-        console.log(pushData);
+        // console.log(pushData);
         await axios.post(`${Server_URL}/answer`, pushData)
         .then((result) => {
-            console.log('요청성공')
-            console.log(result)
+            // console.log('요청성공')
+            // console.log(result)
         })
         .catch((error) => {
-            console.log('error')
-            console.log(error)
+            // console.log('error')
+            // console.log(error)
         })
         navigate(`/product/${product[0].prodid}`)
     }

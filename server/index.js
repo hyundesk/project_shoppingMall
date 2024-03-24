@@ -85,7 +85,7 @@ connection.connect((err) => {
     console.error("Error connecting to MySQL: " + err.stack);
     return;
   }
-  console.log("Connected to MySQL as id " + connection.threadId);
+  // console.log("Connected to MySQL as id " + connection.threadId);
 });
 
 app.get("/", (req, res) => res.send(`Hell'o World!`));
@@ -263,10 +263,10 @@ const generateAccessToken = async () => {
  */
 const createOrder = async (cart, usePoint) => {
   // use the cart information passed from the front-end to calculate the purchase unit details
-  console.log(
-    "shopping cart information passed from the frontend createOrder() callback:",
-    cart
-  );
+  // console.log(
+  //   "shopping cart information passed from the frontend createOrder() callback:",
+  //   cart
+  // );
 
   let sumAmount = 0;
   const accessToken = await generateAccessToken(); // accessToken 발급받기
@@ -495,7 +495,7 @@ app.get("/products/usertype", async (req, res, next) => {
           break;
         }
         default: {
-          console.log("정의되지 않은 사용자 유형입니다.");
+          // console.log("정의되지 않은 사용자 유형입니다.");
           break;
         }
       }
@@ -741,7 +741,7 @@ app.post("/regester", async (req, res) => {
           });
         }
         // 회원가입이 성공한 경우 응답을 클라이언트에게 보냅니다.
-        console.log("사용자가 성공적으로 등록됨");
+        // console.log("사용자가 성공적으로 등록됨");
         return res.status(200).json({
           success: true,
           message: "사용자가 성공적으로 등록됨",
@@ -842,7 +842,7 @@ app.post("/review", upload.array("files", 4), async (req, res) => {
     column: fileColumns[index],
     path: file.path.replace("server/", ""),
   }));
-  console.log(filePaths[0]);
+  // console.log(filePaths[0]);
   const columns = [
     "date",
     "userid",
@@ -1017,7 +1017,7 @@ app.post("/answer", (req, res) => {
     "INSERT INTO ezteam2.productanswer (answerid, qid, answer, prodid, date) VALUES (null, ?, ?, ?, Now())";
   connection.query(sqlQuery, values, (err, result) => {
     if (err) {
-      console.log("Error during inserting", err);
+      // console.log("Error during inserting", err);
       res.status(500).send("Internal Server Error");
     } else {
       res.status(200).send("inserted");

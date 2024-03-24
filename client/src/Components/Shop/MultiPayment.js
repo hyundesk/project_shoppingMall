@@ -62,9 +62,9 @@ const MultiPayment = ({
         channelKey: channelKey,
         paymentId: `payment-${uuidv4()}`,
         orderName: `${userCart[0].name} 외 ${userCart.length - 1} 건`,
-        // totalAmount: totalProductAmount() - usePoint,
+        totalAmount: totalProductAmount() - usePoint,
 
-        totalAmount: 1000,
+        // totalAmount: 1000,
         currency: "CURRENCY_KRW",
         payMethod: payMethod,
         productType: "PRODUCT_TYPE_REAL",

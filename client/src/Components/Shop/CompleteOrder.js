@@ -69,7 +69,7 @@ const CompleteOrder = () => {
       orderProduct,
     } = orderData;
 
-    console.log(orderProduct);
+    // console.log(orderProduct);
 
     return (
       <div className="complete_order_full_container">

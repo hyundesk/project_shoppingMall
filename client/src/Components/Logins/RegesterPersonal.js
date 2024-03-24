@@ -39,7 +39,7 @@ function RegesterPersonal() {
     axios
       .post(`${Server_URL}/checkEmailDuplication`, { email })
       .then((response) => {
-        console.log("서버 응답:", response.data);
+        // console.log("서버 응답:", response.data);
         setEmailDuplication(response.data.success);
         alert(response.data.message);
       })
@@ -98,7 +98,7 @@ function RegesterPersonal() {
         usertype: "personal",
       })
       .then((response) => {
-        console.log("서버 응답:", response.data);
+        // console.log("서버 응답:", response.data);
         alert("회원가입이 완료되었습니다.");
         if (response.data.userType === 1) {
           // 개인 사용자 처리

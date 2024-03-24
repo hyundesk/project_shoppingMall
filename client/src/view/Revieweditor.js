@@ -78,7 +78,7 @@ const Revieweditor = () => {
             setTitle(reviews[0].title)
             setContent(reviews[0].content)
             setImg([])
-            console.log(reviews)
+            // console.log(reviews)
             // const [{ img1, img2, img3, img4 }] = reviews
             // setImg([img1, img2, img3, img4].filter(item => item !== null))
             const responses = await axios.get("http://localhost:8000/shop", {})
@@ -132,19 +132,21 @@ const Revieweditor = () => {
             })
 
             for (var key of formData) {
-                console.log(key)
+                // console.log(key)
             }
             await axios.put('http://localhost:8000/review', formData, {
             headers: {
                 'Content-Type': 'multipart/form-data',
             }
             })
-            .then((result)=>{console.log('요청성공')
-            console.log(result)
+            .then((result)=>{
+                // console.log('요청성공')
+            // console.log(result)
             
             })
-            .catch((error) => {console.log('error')
-            console.log(error)
+            .catch((error) => {
+                // console.log('error')
+            // console.log(error)
             })
             
             
@@ -162,11 +164,11 @@ const Revieweditor = () => {
     
 
     const deleteSelceted = () => {
-        console.log(selectedindex)
-        console.log(img)
+        // console.log(selectedindex)
+        // console.log(img)
         const newimg = img.filter((_, index) => index !== selectedindex);
         setImg(newimg);
-        console.log(newimg)
+        // console.log(newimg)
     }
     
     const toggleCheckbox = (index) => {

@@ -83,19 +83,21 @@ const Reviewwriter = () => {
             })
 
             for (var key of formData) {
-                console.log(key)
+                // console.log(key)
             }
             await axios.post(`${Server_URL}/review`, formData, {
             headers: {
                 'Content-Type': 'multipart/form-data',
             }
             })
-            .then((result)=>{console.log('요청성공')
-            console.log(result)
+            .then((result)=>{
+                // console.log('요청성공')
+            // console.log(result)
             
             })
-            .catch((error) => {console.log('error')
-            console.log(error)
+            .catch((error) => {
+                // console.log('error')
+            // console.log(error)
             })
             
             setImg([]); // 이미지 업로드가 성공하면 초기화
